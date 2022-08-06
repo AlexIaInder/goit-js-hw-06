@@ -18,3 +18,5 @@ const ulEl = document.querySelector('.gallery')
 images.forEach(element => {
   ulEl.insertAdjacentHTML('afterbegin', `<li><img src = '${element.url}' alt = '${element.alt}'  width = '150' height = '100' </li>`)
 });
+
+ulEl.setAttribute('style', 'display: flex; justify-content: center; gap: 30px');
