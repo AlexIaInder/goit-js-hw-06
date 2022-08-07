@@ -10,6 +10,6 @@ function handleSubmit(event) {
         return alert('Please fill in all the fields!')
  }
   
-  const userDetails = { email: email.value, Password: password.value }
+  const userDetails = { email: email.value, password: password.value }
       event.currentTarget.reset()
 }

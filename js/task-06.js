@@ -3,9 +3,8 @@ let inputEl = document.querySelector('#validation-input');
 let inputLength = inputEl.dataset.length;
 
 const input = document.querySelector('input');
-inputEl.addEventListener('change', e => {
-  const text = e.target.value;
-  console.log(e)
+inputEl.addEventListener('change', () => {
+  const text = inputEl.value;
 
   if (text.length === +inputLength) {
     inputEl.classList.add('valid');
