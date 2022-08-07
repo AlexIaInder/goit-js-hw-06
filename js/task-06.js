@@ -5,6 +5,7 @@ let inputLength = inputEl.dataset.length;
 const input = document.querySelector('input');
 inputEl.addEventListener('change', e => {
   const text = e.target.value;
+  console.log(e)
 
   if (text.length === +inputLength) {
     inputEl.classList.add('valid');

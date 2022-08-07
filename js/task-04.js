@@ -1,46 +1,51 @@
 
 // first
-// let valueEl = +document.querySelector('#value').textContent;
+let valueEl = 0;
 
 
-// const decrementBtn = document.querySelector('button[data-action = "decrement"]')
+const decrementBtn = document.querySelector('button[data-action = "decrement"]')
 
 
-// let counterValue = document.querySelector('#value');
+let counterValue = document.querySelector('#value');
 
 
-// const incrementBtn = document.querySelector('button[data-action = "increment"]')
+const incrementBtn = document.querySelector('button[data-action = "increment"]')
 
 
-// decrementBtn.addEventListener('click', event => {
+// decrementBtn.addEventListener('click', () => {
 //   valueEl -= 1;
 //   counterValue.innerText = valueEl;
 // });
 
-// incrementBtn.addEventListener('click', event => {
-//   valueEl += 1;
-//   counterValue.innerText = valueEl;
-// })
+decrementBtn.onclick = () => {
+  valueEl -= 1;
+  counterValue.innerText = valueEl;
+}
+
+incrementBtn.addEventListener('click', () => {
+  valueEl += 1;
+  counterValue.innerText = valueEl;
+})
 // _________________________________________________________________________________________
 // second
-const button = {
-  sub: document.querySelector('[data-action = "decrement"]'),
-  add: document.querySelector('[data-action = "increment"]'),
-  start: document.querySelector('#value'),
-};
+// const counter = {
+//   sub: document.querySelector('[data-action = "decrement"]'),
+//   add: document.querySelector('[data-action = "increment"]'),
+//   start: document.querySelector('#value'),
+// };
 
-let counterValue = 0;
+// let counterValue = 0;
 
-const increment = () => {
-  counterValue += 1;
-  button.start.textContent = counterValue;
-}
+// const increment = () => {
+//   counterValue += 1;
+//   counter.start.textContent = counterValue;
+// }
 
-const decrement = () => {
-  counterValue -= 1;
-  button.start.textContent = counterValue;
-}
-console.log(counterValue)
+// const decrement = () => {
+//   counterValue -= 1;
+//   counter.start.textContent = counterValue;
+// }
+// console.log(counterValue)
 
-button.sub.addEventListener('click', decrement);
-button.add.addEventListener('click', increment);
+// counter.sub.addEventListener('click', decrement);
+// counter.add.addEventListener('click', increment);
