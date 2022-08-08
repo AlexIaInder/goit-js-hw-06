@@ -1,6 +1,6 @@
-let inputEl = document.querySelector('#validation-input');
+const inputEl = document.querySelector('#validation-input');
 
-let inputLength = inputEl.dataset.length;
+const inputLength = inputEl.dataset.length;
 
 const input = document.querySelector('input');
 inputEl.addEventListener('change', () => {
