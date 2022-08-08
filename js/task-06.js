@@ -9,8 +9,10 @@ inputEl.addEventListener('change', () => {
   if (text.length === +inputLength) {
     inputEl.classList.add('valid');
     inputEl.classList.remove('invalid');
-  } else {
+  } else if (text.length) {
     inputEl.classList.remove('valid');
     inputEl.classList.add('invalid');
+  } else {
+    inputEl.classList.remove('invalid');
   }
 });
