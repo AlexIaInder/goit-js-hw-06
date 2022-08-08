@@ -14,5 +14,6 @@ inputEl.addEventListener('change', () => {
     inputEl.classList.add('invalid');
   } else {
     inputEl.classList.remove('invalid');
+    inputEl.classList.remove('valid');
   }
 });
